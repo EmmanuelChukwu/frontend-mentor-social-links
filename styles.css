@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-color: hsl(75, 94%, 57%);
+    --gray-color1: hsl(0, 0%, 20%);
+    --gray-color2: hsl(0, 0%, 12%);
+    --gray-color3: hsl(0, 0%, 8%);
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background-color: var(--gray-color3); 
+    color: white;
+}
+
+.card {
+    max-width: 350px;
+    background-color: var(--gray-color2);
+    border-radius: 15px;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.card .title {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.card .subtitle {
+    color: var(--green-color);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+
+.card img {
+    width:  20%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.card .nav a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--gray-color1);
+    margin: 5px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card .nav a:hover {
+    background-color: var(--green-color);
+    color: var(--gray-color3);
+}
